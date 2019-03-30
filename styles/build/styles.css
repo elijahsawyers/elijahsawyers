@@ -1,3 +1,51 @@
+#landing-container {
+  padding: 0;
+}
 
+#landing-content {
+  position: relative;
+}
+
+#landing-grey-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+  background: black;
+  top: 0;
+}
+
+#landing-navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0) !important;
+}
+#landing-navbar .navbar-brand {
+  padding-left: 8px;
+}
+
+#landing-caption {
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: absolute;
+}
+#landing-caption button {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background: none;
+  color: white;
+  transition: 0.5s;
+  font-size: 20px;
+}
+#landing-caption button:hover {
+  background: white;
+  color: black;
+}
 
 /*# sourceMappingURL=styles.css.map */
