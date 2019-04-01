@@ -1,7 +1,33 @@
 @import "./custom";
 
+$transition-time: 0.5s;
+$light-grey: #ccc;
+
+//====================================================================================================
+// Navbar.
+//====================================================================================================
+#navbar {
+    width: 100%;
+    background: rgba(0,0,0,0) !important;
+
+    .navbar-brand {
+        padding-left: 8px;
+    }
+
+    a:hover {
+        color: $light-grey; 
+    }
+}
+
+//====================================================================================================
+// Landing.
+//====================================================================================================
 #landing-container {
     padding: 0;
+
+    .row {
+        margin: 0;
+    }
 }
 
 #landing-content {
@@ -17,22 +43,38 @@
     top: 0;
 }
 
-#landing-navbar {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    background: rgba(0,0,0,0) !important;
-
-    .navbar-brand {
-        padding-left: 8px;
-    }
-}
-
 #landing-caption {
     width: 100%;
     text-align: center;
     color: white;
     position: absolute;
+
+    h1 {
+        margin: 0;
+    }
+
+    p {
+        margin: 5px 0 5px 0;
+    }
+
+    #landing-social-links {
+        margin: 5px 0 5px 0;
+        font-size: 24px;
+    }
+
+    .fab {
+        transition: $transition-time;
+    }
+
+    .fab:hover {
+        color: $light-grey;
+        animation: spin 1s ease-in-out;
+    }
+
+    a {
+        margin: 0 5px 0 5px;
+        color: white;
+    }
 
     button {
         display: block;
@@ -43,12 +85,37 @@
         border-radius: 10px;
         background: none;
         color: white;
-        transition: 0.5s;
+        transition: $transition-time;
         font-size: 20px;
     }
 
     button:hover {
         background: white;
         color: black; 
+    }
+}
+
+//====================================================================================================
+// Animations.
+//====================================================================================================
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+//====================================================================================================
+// Media Queries.
+//====================================================================================================
+@include media-breakpoint-up(lg) { 
+    #navbar a {
+        color: white;
+    }
+
+    #landing-container {
+        margin-top: -56px;
     }
 }

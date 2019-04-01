@@ -1,5 +1,19 @@
+#navbar {
+  width: 100%;
+  background: rgba(0, 0, 0, 0) !important;
+}
+#navbar .navbar-brand {
+  padding-left: 8px;
+}
+#navbar a:hover {
+  color: #ccc;
+}
+
 #landing-container {
   padding: 0;
+}
+#landing-container .row {
+  margin: 0;
 }
 
 #landing-content {
@@ -15,21 +29,32 @@
   top: 0;
 }
 
-#landing-navbar {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  background: rgba(0, 0, 0, 0) !important;
-}
-#landing-navbar .navbar-brand {
-  padding-left: 8px;
-}
-
 #landing-caption {
   width: 100%;
   text-align: center;
   color: white;
   position: absolute;
+}
+#landing-caption h1 {
+  margin: 0;
+}
+#landing-caption p {
+  margin: 5px 0 5px 0;
+}
+#landing-caption #landing-social-links {
+  margin: 5px 0 5px 0;
+  font-size: 24px;
+}
+#landing-caption .fab {
+  transition: 0.5s;
+}
+#landing-caption .fab:hover {
+  color: #ccc;
+  animation: spin 1s ease-in-out;
+}
+#landing-caption a {
+  margin: 0 5px 0 5px;
+  color: white;
 }
 #landing-caption button {
   display: block;
@@ -46,6 +71,24 @@
 #landing-caption button:hover {
   background: white;
   color: black;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (min-width: 992px) {
+  #navbar a {
+    color: white;
+  }
+
+  #landing-container {
+    margin-top: -56px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
