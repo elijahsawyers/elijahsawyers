@@ -2,6 +2,20 @@
 
 $transition-time: 0.5s;
 $light-grey: #ccc;
+$blue: #64A9E0;
+
+html {
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    margin-bottom: 40px;
+}
+
+hr {
+    width: 150px;
+    border-color: $light-grey;
+}
 
 //====================================================================================================
 // Navbar.
@@ -12,6 +26,7 @@ $light-grey: #ccc;
 
     .navbar-brand {
         padding-left: 8px;
+        font-family: "Mr Dafoe", cursive;
     }
 
     a:hover {
@@ -38,9 +53,10 @@ $light-grey: #ccc;
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0.25;
+    opacity: 0.15;
     background: black;
     top: 0;
+    display: none;
 }
 
 #landing-caption {
@@ -91,8 +107,17 @@ $light-grey: #ccc;
 
     button:hover {
         background: white;
-        color: black; 
+        color: $light-grey; 
     }
+}
+
+//====================================================================================================
+// About.
+//====================================================================================================
+
+#about-container {
+    text-align: center;
+    color: $light-grey;
 }
 
 //====================================================================================================
@@ -110,6 +135,41 @@ $light-grey: #ccc;
 //====================================================================================================
 // Media Queries.
 //====================================================================================================
+
+@include media-breakpoint-down(md) { 
+    #navbar {
+        background: white !important;
+    }
+
+    #landing-caption h1 {
+        font-size: 36px !important;
+    }
+
+    .section-header {
+        font-size: 36px;
+    }
+}
+
+@include media-breakpoint-only(md) {
+    #landing-caption h1 {
+        font-size: 72px !important;
+    }
+
+    .section-header {
+        font-size: 72px;
+    }
+}
+
+@include media-breakpoint-down(md) { 
+    #landing-caption button {
+        display: none;
+    }
+
+    .fab:hover {
+        animation: none;
+    }
+}
+
 @include media-breakpoint-up(lg) { 
     #navbar a {
         color: white;
@@ -117,5 +177,9 @@ $light-grey: #ccc;
 
     #landing-container {
         margin-top: -56px;
+    }
+
+    .section-header {
+        font-size: 72px;
     }
 }
