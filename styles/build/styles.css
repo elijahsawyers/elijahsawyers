@@ -165,17 +165,6 @@ li.nav-item:hover a {
     opacity: 100;
   }
 }
-@keyframes blink-caret {
-  0% {
-    border-color: transparent;
-  }
-  50% {
-    border-color: white;
-  }
-  100% {
-    border-color: transparent;
-  }
-}
 @media (max-width: 991.98px) {
   #navbar {
     background: white !important;
