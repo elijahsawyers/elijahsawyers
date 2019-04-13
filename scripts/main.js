@@ -6,7 +6,7 @@ function setStyles() {
     // Change the landing image src and size if it's a mobile phone.
     let landingContent = document.getElementById("landing-content");
     if (window.innerWidth <= 768) {
-        landingContent.style.backgroundImage = "url(\"../../images/Me\ Mobile.jpg\")"
+        //landingContent.style.backgroundImage = "url(\"../../images/Me\ Mobile.jpg\")"
         landingContent.style.height = (landingContent.clientHeight - document.getElementById("navbar").clientHeight) + "px"
     }
 
