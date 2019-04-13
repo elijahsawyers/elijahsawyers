@@ -53,10 +53,10 @@ li.nav-item:hover a {
 }
 
 #landing-content {
-  background-image: url("../../images/Me Desktop.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../../images/Me Desktop.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   height: 100vh;
   position: relative;
