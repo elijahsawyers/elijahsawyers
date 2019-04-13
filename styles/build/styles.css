@@ -2,13 +2,22 @@ html {
   overflow-x: hidden;
 }
 
+.hide-html {
+  opacity: 0;
+}
+
+.show-html {
+  animation: fade-in 3s;
+  animation-fill-mode: forwards;
+}
+
 .container-fluid {
   margin-bottom: 40px;
 }
 
 hr {
   width: 150px;
-  border-color: #ccc;
+  border-color: black;
 }
 
 #navbar {
@@ -18,9 +27,22 @@ hr {
 #navbar .navbar-brand {
   padding-left: 8px;
   font-family: "Mr Dafoe", cursive;
+  transition: color 0.5s;
 }
-#navbar a:hover {
-  color: #ccc;
+#navbar .navbar-brand:hover {
+  color: #aaa !important;
+}
+
+li.nav-item a {
+  transition: color 0.5s;
+}
+
+ul.navbar-nav:hover a {
+  color: #aaa !important;
+}
+
+li.nav-item:hover a {
+  color: white !important;
 }
 
 #landing-container {
@@ -31,6 +53,12 @@ hr {
 }
 
 #landing-content {
+  background-image: url("../../images/Me Desktop.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   position: relative;
 }
 
@@ -38,10 +66,10 @@ hr {
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0.15;
+  opacity: 0.4;
   background: black;
   top: 0;
-  display: none;
+  display: block;
 }
 
 #landing-caption {
@@ -49,23 +77,30 @@ hr {
   text-align: center;
   color: white;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
 }
 #landing-caption h1 {
   margin: 0;
 }
 #landing-caption p {
   margin: 5px 0 5px 0;
+  font-family: serif;
+  font-size: 24px;
 }
 #landing-caption #landing-social-links {
   margin: 5px 0 5px 0;
   font-size: 24px;
 }
-#landing-caption .fab {
+#landing-caption .inline-social-links-wrapper a {
   transition: 0.5s;
 }
-#landing-caption .fab:hover {
-  color: #ccc;
-  animation: spin 1s ease-in-out;
+#landing-caption .inline-social-links-wrapper:hover a {
+  color: #aaa;
+}
+#landing-caption .inline-social-links-wrapper a:hover {
+  color: white;
 }
 #landing-caption a {
   margin: 0 5px 0 5px;
@@ -85,20 +120,60 @@ hr {
 }
 #landing-caption button:hover {
   background: white;
-  color: #ccc;
+  color: black;
+}
+
+#landing-chevron {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  animation: up-down;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 #about-container {
   text-align: center;
-  color: #ccc;
+  color: black;
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
+@keyframes up-down {
+  0% {
+    transform: translate(-50%, 0%);
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+    transform: translate(-50%, 0%);
+  }
+  50% {
+    transform: translate(-50%, -10%);
+  }
+  100% {
+    transform: translate(-50%, 0%);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@keyframes blink-caret {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+  100% {
+    border-color: transparent;
   }
 }
 @media (max-width: 991.98px) {
@@ -109,18 +184,10 @@ hr {
   #landing-caption h1 {
     font-size: 36px !important;
   }
-
-  .section-header {
-    font-size: 36px;
-  }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   #landing-caption h1 {
     font-size: 72px !important;
-  }
-
-  .section-header {
-    font-size: 72px;
   }
 }
 @media (max-width: 991.98px) {
@@ -139,10 +206,6 @@ hr {
 
   #landing-container {
     margin-top: -56px;
-  }
-
-  .section-header {
-    font-size: 72px;
   }
 }
 

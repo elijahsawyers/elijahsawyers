@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="hide-html">
 
 <head lang="en">
     <!-- Meta tags -->
@@ -56,25 +56,27 @@
     <!-- Landing container -->
     <div id="landing-container" class="container-fluid">
         <div class="row no-gutters">
-            <div class="col-sm-12">
-                <div id="landing-content">
-                    <!-- Landing image -->
-                    <img id="landing-img" class="img-fluid">
-                    <div id="landing-grey-bg"></div>
+            <div id="landing-content" class="col-sm-12">
+                <!-- Greys out the background image -->
+                <div id="landing-grey-bg"></div>
 
-                    <!-- Landing caption -->
-                    <div id="landing-caption">
-                        <h1 class="display-1">I am <span class="font-weight-bold">Elijah Sawyers.</span></h1>
-                        <p class="lead"><em>Jack of all trades, master of none.</em></p>
-                        <div id="landing-social-links">
-                            <a href="https://www.instagram.com/elijahsawyers/" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.twitter.com/elijah_sawyers/" target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.github.com/elijahsawyers/" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/elijah-sawyers/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                        <button>Download Resume</button>
+                <!-- Landing caption -->
+                <div id="landing-caption">
+                    <h1 class="display-1">I am <span class="font-weight-bold">Elijah Sawyers.</span></h1>
+                    <p class="lead"><em>Jack of all trades, master of none.</em></p>
+                    <div id="landing-social-links">
+                        <span class="inline-social-links-wrapper">
+                            <a href="https://www.instagram.com/elijahsawyers/" target="_blank"><i class="fab fa-lg fa-instagram"></i></a>
+                            <a href="https://www.twitter.com/elijah_sawyers/" target="_blank"><i class="fab fa-lg fa-twitter"></i></a>
+                            <a href="https://www.github.com/elijahsawyers/" target="_blank"><i class="fab fa-lg fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/elijah-sawyers/" target="_blank"><i class="fab fa-lg fa-linkedin"></i></a>
+                        </span>
                     </div>
+                    <button>Download Resume</button>
                 </div>
+
+                <!-- Bottom Chevron -->
+                <i id="landing-chevron" class="fas fa-4x fa-chevron-down"></i>
             </div>
         </div>
     </div>
@@ -83,7 +85,7 @@
     <div id="about-container" class="container-fluid">
         <div class="row no-gutters">
             <div class="col-sm-12">
-                <h1 class="section-header">About</h1>
+                <h1 class="display-3 section-header">About</h1>
                 <hr>
             </div>
         </div>
