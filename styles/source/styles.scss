@@ -33,7 +33,9 @@ hr {
 
 #navbar {
     width: 100%;
-    background: rgba(0,0,0,0) !important;
+    opacity: 0;
+    animation: fade-in 1s 1.5s forwards;
+    transition: background-color $transition-time;
 
     .navbar-brand {
         padding-left: 8px;
@@ -50,12 +52,24 @@ li.nav-item a {
     transition: color $transition-time;
 }
 
-ul.navbar-nav:hover a {
+.navbar-nav:hover a {
     color: $grey !important;
 }
 
-li.nav-item:hover a {
+.hiding-nav-li a {
     color: white !important;
+}
+
+.hiding-nav-li:hover a {
+    color: white !important;
+}
+
+.showing-nav-li a {
+    color: black !important;
+}
+
+.showing-nav-li:hover a {
+    color: black !important;
 }
 
 //====================================================================================================
@@ -96,7 +110,10 @@ li.nav-item:hover a {
     position: absolute;
     top: 50%;
     left:50%;
-    transform: translate(-50%, -55%);
+    opacity: 0;
+    transform: translate(-50%, 75%);
+    animation: slide-up 1s 1s forwards,
+               fade-in 1s 1s forwards;
 
     h1 {
         margin: 0;
@@ -153,12 +170,11 @@ li.nav-item:hover a {
     color: white;
     position: absolute;
     bottom: 0;
+    opacity: 0;
     display: block;
     left: 50%;
     transform: translate(-50%, 0%);
-    animation: up-down;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+    animation: up-down 1s infinite, fade-in 1s 1.5s forwards;
 }
 
 //====================================================================================================
@@ -189,6 +205,15 @@ li.nav-item:hover a {
     }
 }
 
+@keyframes slide-up {
+    from {
+        transform: translate(-50%, 75%);
+    }
+    to {
+        transform: translate(-50%, -55%);;
+    }
+}
+
 @keyframes fade-in {
     0% {
         opacity: 0.0;
@@ -208,6 +233,8 @@ li.nav-item:hover a {
 @include media-breakpoint-down(md) { 
     #navbar {
         background: white !important;
+        opacity: 1;
+        animation: none;
     }
 
     #landing-content {

@@ -22,7 +22,9 @@ hr {
 
 #navbar {
   width: 100%;
-  background: rgba(0, 0, 0, 0) !important;
+  opacity: 0;
+  animation: fade-in 1s 1.5s forwards;
+  transition: background-color 0.5s;
 }
 #navbar .navbar-brand {
   padding-left: 8px;
@@ -37,12 +39,24 @@ li.nav-item a {
   transition: color 0.5s;
 }
 
-ul.navbar-nav:hover a {
+.navbar-nav:hover a {
   color: #aaa !important;
 }
 
-li.nav-item:hover a {
+.hiding-nav-li a {
   color: white !important;
+}
+
+.hiding-nav-li:hover a {
+  color: white !important;
+}
+
+.showing-nav-li a {
+  color: black !important;
+}
+
+.showing-nav-li:hover a {
+  color: black !important;
 }
 
 #landing-container {
@@ -79,7 +93,9 @@ li.nav-item:hover a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -55%);
+  opacity: 0;
+  transform: translate(-50%, 75%);
+  animation: slide-up 1s 1s forwards, fade-in 1s 1s forwards;
 }
 #landing-caption h1 {
   margin: 0;
@@ -127,12 +143,11 @@ li.nav-item:hover a {
   color: white;
   position: absolute;
   bottom: 0;
+  opacity: 0;
   display: block;
   left: 50%;
   transform: translate(-50%, 0%);
-  animation: up-down;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+  animation: up-down 1s infinite, fade-in 1s 1.5s forwards;
 }
 
 #about-container {
@@ -154,6 +169,14 @@ li.nav-item:hover a {
     transform: translate(-50%, 0%);
   }
 }
+@keyframes slide-up {
+  from {
+    transform: translate(-50%, 75%);
+  }
+  to {
+    transform: translate(-50%, -55%);
+  }
+}
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -168,6 +191,8 @@ li.nav-item:hover a {
 @media (max-width: 991.98px) {
   #navbar {
     background: white !important;
+    opacity: 1;
+    animation: none;
   }
 
   #landing-content {
