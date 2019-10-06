@@ -6,11 +6,13 @@
 'use strict';
 
 (function($) {
-
 	/* -- Fade-in website -- */
 	$(window).on('load', function() {
 		$('body').addClass('fade-in');
 	});
+
+	/* -- Bootstrap scrollspy -- */
+	$('body').scrollspy();
 
 	/* -- Smooth scroll on nav click -- */
 	$("#nav .main-nav a[href^='#']").on('click', function(e) {
@@ -44,5 +46,4 @@
 		autoplay : true,
 		animateOut: 'fadeOut'
 	});
-
 })(jQuery);
