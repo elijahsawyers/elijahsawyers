@@ -1,36 +1,33 @@
 /*
-Colors:
-	Body 		: #868F9B
-	Headers 	: #10161A
-	Primary 	: #6195FF
-	Dark        : #FCFCFF
-	Grey 		: #F4F4F4 #FAFAFA #EEE
+ * ======================================================================
+ * Colors:
+ *     Body     : #868F9B
+ *	   Headers 	: #10161A
+ *	   Primary 	: #6195FF
+ *	   Dark     : #FCFCFF
+ *	   Grey     : #F4F4F4 #FAFAFA #EEE
+ * ======================================================================
+ * Fonts:
+ *     Montserrat Varela Round
+ * ======================================================================
+ * Table of Contents:
+ *     1. General
+ *     2. Logo
+ *     3. Navigation
+ *     4. Header
+ *     5. About
+ *     6. Contact
+ *     7. Footer
+ *     8. Responsive
+ *     9. Owl theme
+ * ======================================================================
+ */
 
-Fonts: Montserrat Varela Round
-
-Table of Contents:
-------------------------------------
-1 > General
-2 > Logo
-3 > Navigation
-4 > Header
-5 > About
-6 > Portfolio
-7 > Services
-8 >  Numbers
-9 > Testimonial
-10 > Contact
-11 > Footer
-12 > Responsive
-13 > Owl theme
-14 > Back to top
-
-------------------------------------*/
-
-/*------------------------------------*\
-	General
-\*------------------------------------*/
-
+/*======================================================================*
+ *                                                                      *
+ * 1. General                                                           *
+ *                                                                      *
+ *======================================================================*/
 
 /* -- typography -- */
 
@@ -241,9 +238,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 
-/*------------------------------------*\
-	Logo
-\*------------------------------------*/
+/*======================================================================*
+ *                                                                      *
+ * 2. Logo                                                              *
+ *                                                                      *
+ *======================================================================*/
 
 .navbar-brand {
     padding: 0;
@@ -276,9 +275,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 
-/*------------------------------------*\
-	Navigation
-\*------------------------------------*/
+/*======================================================================*
+ *                                                                      *
+ * 3. Navigation                                                        *
+ *                                                                      *
+ *======================================================================*/
 
 #nav {
     padding: 10px 0px;
@@ -342,66 +343,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     .main-nav>li>a:hover:after, .main-nav>li.active>a:after {
         width: 100%;
     }
-    /* dropdown */
-    .has-dropdown {
-        position: relative;
-    }
-    .has-dropdown>a:before {
-        font-family: 'FontAwesome';
-        content: "\f054";
-        font-size: 6px;
-        margin-left: 6px;
-        float: right;
-        -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-        -webkit-transition: 0.2s transform;
-        transition: 0.2s transform;
-    }
-    .dropdown {
-        position: absolute;
-        right: -50%;
-        top: 0;
-        background-color: #6195FF;
-        width: 200px;
-        -webkit-box-shadow: 0px 5px 5px -5px rgba(53, 64, 82, 0.2);
-        box-shadow: 0px 5px 5px -5px rgba(53, 64, 82, 0.2);
-        -webkit-transform: translateY(15px) translateX(50%);
-        -ms-transform: translateY(15px) translateX(50%);
-        transform: translateY(15px) translateX(50%);
-        opacity: 0;
-        visibility: hidden;
-        -webkit-transition: 0.2s all;
-        transition: 0.2s all;
-    }
-    .main-nav>.has-dropdown>.dropdown {
-        top: 100%;
-        right: 50%;
-    }
-    .main-nav>.has-dropdown>.dropdown .dropdown.dropdown-left {
-        right: 150%;
-    }
-    .dropdown li a {
-        display: block;
-        color: #FFF;
-        border-top: 1px solid rgba(250, 250, 250, 0.1);
-        padding: 10px 0px;
-    }
-    .dropdown li:nth-child(1) a {
-        border-top: none;
-    }
-    .has-dropdown:hover>.dropdown {
-        opacity: 1;
-        visibility: visible;
-        -webkit-transform: translateY(0px) translateX(50%);
-        -ms-transform: translateY(0px) translateX(50%);
-        transform: translateY(0px) translateX(50%);
-    }
-    .has-dropdown:hover>a:before {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
     .nav-collapse {
         display: none;
     }
@@ -456,36 +397,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         background-color: #6195FF;
         color: #FFF;
         opacity: 1;
-    }
-    .has-dropdown>a:after {
-        content: "\f054";
-        font-family: 'FontAwesome';
-        float: right;
-        -webkit-transition: 0.2s -webkit-transform;
-        transition: 0.2s -webkit-transform;
-        transition: 0.2s transform;
-        transition: 0.2s transform, 0.2s -webkit-transform;
-    }
-    .dropdown {
-        opacity: 0;
-        visibility: hidden;
-        height: 0;
-        background: rgba(250, 250, 250, 0.1);
-    }
-    .dropdown li a {
-        padding: 6px 10px;
-    }
-    .has-dropdown.open-drop>a:after {
-        -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }
-    .has-dropdown.open-drop>.dropdown {
-        opacity: 1;
-        visibility: visible;
-        height: auto;
-        -webkit-transition: 0.2s all;
-        transition: 0.2s all;
     }
 }
 
@@ -555,9 +466,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 
-/*------------------------------------*\
-	Header
-\*------------------------------------*/
+/*======================================================================*
+ *                                                                      *
+ * 4. Header                                                            *
+ *                                                                      *
+ *======================================================================*/
 
 header {
     position: relative;
@@ -585,29 +498,13 @@ header {
   margin-top: 20px;
 }
 
-.header-wrapper h2 {
-    display: inline-block;
-    margin-bottom: 0px;
-}
 
-.header-wrapper .breadcrumb {
-    float: right;
-    background: transparent;
-    margin-bottom: 0px;
-}
+/*======================================================================*
+ *                                                                      *
+ * 5. About                                                              *
+ *                                                                      *
+ *======================================================================*/
 
-.header-wrapper .breadcrumb .breadcrumb-item.active {
-    color: #868F9B;
-}
-
-.breadcrumb>li+li:before {
-    color: #868F9B;
-}
-
-
-/*------------------------------------*\
-	About
-\*------------------------------------*/
 .bullet {
     margin: 15px 0px;
 }
@@ -618,225 +515,11 @@ header {
     margin-right: 5px;
 }
 
-/*------------------------------------*\
-	Portfolio
-\*------------------------------------*/
-
-.work {
-    position: relative;
-    padding: 20px;
-}
-
-.work>img {
-  width: 100%;
-}
-
-.work .overlay {
-    background: #1C1D21;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    opacity: 0;
-    -webkit-transition: 0.2s opacity;
-    transition: 0.2s opacity;
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
-}
-
-.work:hover .overlay {
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-    opacity: 0.8;
-}
-
-.work .work-content {
-    position: absolute;
-    left: 25px;
-    right: 25px;
-    top: 50%;
-    text-align: center;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.work .work-content h3 {
-    -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%);
-    opacity: 0;
-    color: #FFF;
-    margin-bottom: 10px;
-    -webkit-transition: 0.2s all;
-    transition: 0.2s all;
-    -webkit-transition-delay: 0.1s;
-    transition-delay: 0.1s;
-}
-
-.work:hover .work-content h3 {
-    -webkit-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    transform: translateY(0%);
-    opacity: 1;
-    -webkit-transition-delay: 0.1s;
-    transition-delay: 0.1s;
-}
-
-.work .work-content span {
-    display: block;
-    text-transform: uppercase;
-    -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%);
-    opacity: 0;
-    color: #6195FF;
-    margin-bottom: 5px;
-    -webkit-transition: 0.2s all;
-    transition: 0.2s all;
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
-}
-
-.work:hover .work-content span {
-    -webkit-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    transform: translateY(0%);
-    opacity: 1;
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-}
-
-.work .work-link {
-    text-align: center;
-    margin-top: 20px;
-    opacity: 0;
-    -webkit-transition: 0.2s opacity;
-    transition: 0.2s opacity;
-}
-
-.work .work-link a {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-color: #6195FF;
-    color: #FFF;
-    line-height: 50px;
-    text-align: center;
-}
-
-.work:hover .work-link {
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
-    opacity: 1;
-}
-
-
-/*------------------------------------*\
-	Services
-\*------------------------------------*/
-
-.service {
-    position: relative;
-    padding: 40px 20px 40px 70px;
-    margin: 15px 0px;
-    border: 1px solid #EEE;
-}
-
-.service i {
-    position: absolute;
-    left: 20px;
-    text-align: center;
-    font-size: 32px;
-    color: #6195FF;
-    border-radius: 50%;
-}
-
-.service:after {
-    content: "";
-    background-color: #1C1D21;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 0%;
-    z-index: -1;
-    -webkit-transition: 0.2s width;
-    transition: 0.2s width;
-}
-
-.service:hover:after {
-    width: 100%;
-}
-
-.service h3 {
-  -webkit-transition: 0.2s color;
-  transition: 0.2s color;
-}
-
-.service:hover h3 {
-    color: #fff;
-}
-
-/*------------------------------------*\
-	Numbers
-\*------------------------------------*/
-
-.number {
-    text-align: center;
-    margin: 15px 0px;
-}
-
-.number i {
-    color: #6195FF;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.number h3 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-/*------------------------------------*\
-	Testimonial
-\*------------------------------------*/
-
-.testimonial {
-    margin: 15px 0px;
-}
-
-.testimonial-meta {
-    position: relative;
-    padding-left: 90px;
-    height: 70px;
-    margin-bottom: 20px;
-    padding-top: 10px;
-}
-
-.testimonial img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 70px !important;
-    height: 70px !important;
-    border-radius: 50%;
-}
-
-.testimonial h3 {
-    margin-bottom: 5px;
-}
-
-.testimonial span {
-    font-size: 14px;
-    color: #6195FF;
-    text-transform: uppercase;
-}
-
-/*------------------------------------*\
-	Contact
-\*------------------------------------*/
+/*======================================================================*
+ *                                                                      *
+ * 6. About                                                             *
+ *                                                                      *
+ *======================================================================*/
 
 .contact {
     margin: 15px 0px;
@@ -867,9 +550,11 @@ header {
     margin-left: 15px;
 }
 
-/*------------------------------------*\
-	Footer
-\*------------------------------------*/
+/*======================================================================*
+ *                                                                      *
+ * 7. Footer                                                            *
+ *                                                                      *
+ *======================================================================*/
 
 #footer {
     position: relative;
@@ -913,9 +598,11 @@ header {
     margin: 0;
 }
 
-/*------------------------------------*\
-	Responsive
-\*------------------------------------*/
+/*======================================================================*
+ *                                                                      *
+ * 8. Responsive                                                        *
+ *                                                                      *
+ *======================================================================*/
 
 @media only screen and (max-width: 991px) {}
 
@@ -932,46 +619,22 @@ header {
   .home-content h1 {
 		font-size:36px;
 	}
-
-  .header-wrapper h2 {
-      margin-bottom: 20px;
-      text-align: center;
-      display: block;
-  }
-
-  .header-wrapper .breadcrumb {
-      float: none;
-      text-align: center;
-  }
 }
 
 @media only screen and (max-width: 480px) {
-  #portfolio [class*='col-xs'] {
-		  width:100%;
-	}
-
-  #numbers [class*='col-xs'] {
-		  width:100%;
-	}
-
   .contact-form .input:nth-child(1), .contact-form .input:nth-child(2) {
       width: 100%;
   }
   .contact-form .input:nth-child(2) {
       margin-left: 0px;
   }
-
-  .reply-form form .input, .reply-form form .input {
-      width: 100%;
-  }
-  .reply-form form .input:nth-child(2) {
-      margin-left: 0px;
-  }
 }
 
-/*------------------------------------*\
-	Owl theme
-\*------------------------------------*/
+/*======================================================================*
+ *                                                                      *
+ * 9. Owl Theme                                                         *
+ *                                                                      *
+ *======================================================================*/
 
 /* -- dots -- */
 
@@ -1029,30 +692,4 @@ header {
 .owl-theme .owl-nav [class*='owl-']:hover {
     opacity: 0.8;
     background: #6195FF;
-}
-
-/*------------------------------------*\
-	Back to top
-\*------------------------------------*/
-
-#back-to-top {
-  	display:none;
-  	position: fixed;
-  	bottom: 20px;
-  	right: 20px;
-  	width: 50px;
-  	height: 50px;
-  	line-height: 50px;
-  	text-align: center;
-  	background: #6195FF;
-  	border-radius:3px;
-  	color: #FFF;
-  	z-index: 9999;
-    -webkit-transition: 0.2s opacity;
-    transition: 0.2s opacity;
-  	cursor: pointer;
-}
-
-#back-to-top:hover {
-    opacity: 0.8;
 }
