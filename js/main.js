@@ -46,4 +46,39 @@
 		autoplay : true,
 		animateOut: 'fadeOut'
 	});
+
+	/* -- Inputs & Textbox Validation -- */
+	$('.input').on('click', function() {
+		const input = $(this);
+
+		input.removeClass('invalid');
+	});
+
+	/* -- Contact form -- */
+	$('.contact-form').on('submit ', function(e) {
+		e.preventDefault();
+		let isValidForm = true;
+
+		$('.input').each(function() {
+			const input = $(this);
+			if (!input.val()) {
+				isValidForm = false;
+				input.addClass('invalid');
+			}
+		});
+
+		if (isValidForm) {
+			$.ajax({
+				'url': 'https://elijah-sawyers-email-service.herokuapp.com/',
+				'type': 'post',
+				'data': $('.contact-form').serialize(),
+				'success': function() {
+					alert('Message sent!');
+			}	,
+				'error': function() {
+					alert('Unable to send the message! Please try again later.');
+				},
+    	});
+		}
+	});
 })(jQuery);
