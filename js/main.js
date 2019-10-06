@@ -7,6 +7,11 @@
 
 (function($) {
 
+	/* -- Fade-in website -- */
+	$(window).on('load', function() {
+		$('body').addClass('fade-in');
+	});
+
 	/* -- Smooth scroll on nav click -- */
 	$("#nav .main-nav a[href^='#']").on('click', function(e) {
 		e.preventDefault();
