@@ -13,4 +13,4 @@ What's up, folks?! As per the title, my name is Elijah Sawyers, and I'm a Comput
 
 ### 🌎 Where to find me
 
-There are plenty of places to find me on the web. Feel free to [email me](elijahsawyers@gmail.com), shoot me a DM on [twitter](twitter.com/elijah_sawyers), connect with me on [LinkedIn](linkedin.com/in/elijah-sawyers), or just take a gander at my [website](elijahsawyers.me).
+There are plenty of places to find me on the web. Feel free to [email me](mailto:elijahsawyers@gmail.com), shoot me a DM on [twitter](https://twitter.com/elijah_sawyers), connect with me on [LinkedIn](https://linkedin.com/in/elijah-sawyers), or just take a gander at my [website](https://elijahsawyers.me).
