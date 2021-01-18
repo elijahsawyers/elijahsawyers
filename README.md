@@ -4,7 +4,7 @@ What's up, folks?! As per the title, my name is Elijah Sawyers, and I'm a Comput
 
 ### ❓About me
 
-- 🍎 **Work:** a fruit company
+- 🍎 **Work:** Support Advisor at some fruit company
 - 🐘 **University:** The University of Alabama (Roll Tide!!)
 - 📍 **Location:** Tuscaloosa, AL
 - 📚 **Learning:** iOS/macOS development
