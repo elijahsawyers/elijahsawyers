@@ -8,7 +8,7 @@ What's up, folks?! As per the title, my name is Elijah Sawyers, and I'm a Comput
 - 🐘 **University:** The University of Alabama (Roll Tide!!)
 - 📍 **Location:** Tuscaloosa, AL
 - 📚 **Learning:** iOS/macOS development
-- 🏗 **Building:** [Touch Bar Space Invaders](https://github.com/elijahsawyers/TouchBarSpaceInvaders)
+- 🏗 **Building:** [Main Mail](https://github.com/elijahsawyers/MainMail)
 - 🔥 **Fun Fact:** I can juggle machetes (not lying)
 
 ### 🌎 Where to find me
