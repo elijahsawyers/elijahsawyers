@@ -8,7 +8,7 @@ What's up, folks?! As per the title, my name is Elijah Sawyers, and I'm a Comput
 - 🐘 **University:** The University of Alabama (Roll Tide!!)
 - 📍 **Location:** Tuscaloosa, AL
 - 📚 **Learning:** iOS/macOS development
-- 🏗 **Building:** [Main Mail](https://github.com/elijahsawyers/MainMail)
+- 🏗 **Building:** [The Everyday Calendar](https://github.com/elijahsawyers/TheEverydayCalendar)
 - 🔥 **Fun Fact:** I can juggle machetes (not lying)
 
 ### 🌎 Where to find me
