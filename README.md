@@ -1,4 +1,4 @@
-## Hey, I'm Elijah Sawyers!🤙🏼
+## Hey folks, I'm Elijah Sawyers!🤙🏼
 
 What's up, folks?! As per the title, my name is Elijah Sawyers, and I'm a Computer Science student most interested in iOS📱 and macOS💻 development.
 
