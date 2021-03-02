@@ -5,10 +5,8 @@ What's up, folks?! As per the title, my name is Elijah Sawyers, and I'm a Comput
 ### ❓About me
 
 - 🍎 **Work:** Some fruit company
-- 🐘 **University:** The University of Alabama (Roll Tide!!)
+- 🐘 **University:** The University of Alabama (Roll Tide)
 - 📍 **Location:** Tuscaloosa, AL
-- 📚 **Learning:** iOS/macOS development
-- 🔥 **Fun Fact:** I can juggle machetes (not lying)
 
 ### 🌎 Where to find me
 
