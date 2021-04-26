@@ -6,7 +6,7 @@ What's up, folks?! As per the title, my name is Elijah Sawyers, and I'm a Comput
 
 - 🍎 **Work:** Some fruit company
 - 🐘 **University:** The University of Alabama (Roll Tide)
-- 📍 **Location:** Tuscaloosa, AL
+- 📍 **Location:** San Clemente, CA
 
 ### 🌎 Where to find me
 
