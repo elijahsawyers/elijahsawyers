@@ -1,6 +1,6 @@
 ## Hey folks, I'm Elijah Sawyers!🤙🏼
 
-What's up?! As per the title, my name is Elijah Sawyers...I'm a recent Computer Science graduate and new Software Development Engineer in Test.
+What's up?! As per the title, my name is Elijah Sawyers...I'm a recent Computer Science graduate that now works as a Software Development Engineer in Test.
 
 ### ❓About me
 
