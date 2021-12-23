@@ -1,11 +1,11 @@
 ## Hey folks, I'm Elijah Sawyers!🤙🏼
 
-What's up?! As per the title, my name is Elijah Sawyers, and I'm a Computer Science student and (soon-to-be) SWE in the Bay Area!
+What's up?! As per the title, my name is Elijah Sawyers...I'm a recent Computer Science graduate and new Software Development Engineer in Test.
 
 ### ❓About me
 
-- 🐘 **University:** The University of Alabama (Roll Tide)
-- 📍 **Location:** San Clemente, CA
+- 🐘 **Alma Mater:** The University of Alabama (Roll Tide)
+- 📍 **Location:** Orange County, CA
 
 ### 🌎 Where to find me
 
